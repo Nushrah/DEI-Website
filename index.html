@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="About DEI">
+    <meta name="keywords" content="diversity, equity, inclusion, dei, work">
+
+    <title>What is DEI</title>
+    <link rel="icon" type="image/x-icon" href="./images/favicon.png">
+
+    <link rel="stylesheet" type="text/css" href="./css/theme.css">
+    <link rel="stylesheet" type="text/css" href="./css/index.css">
+
+    <script src="./script/nav.js"></script>
+
+</head>
+
+<body>
+    <header>
+
+        <img id="banner" src="./images/DEI@WORK logo.png">
+
+        <a href="https://ssweb.cityu.edu.hk/"><img id="cityu_banner" src="./images/SS_Logo_Eng_CMYK.png"></a>
+
+
+        <div id="lang_button">
+            <p id="lang_button_p">
+                <a id="lang_link" href="#">繁</a>
+            </p>
+        </div>
+
+
+    </header>
+
+    <nav id='menu'>
+        <input type='checkbox' id='responsive-menu' onclick='updatemenu()'><label></label>
+        <ul>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="#">News</a></li>
+            <li><a class='dropdown-arrow' href="./html/about.html">About Us</a>
+                <ul class='sub-menus'>
+                    <li><a href="./html/services.html">Our Services</a></li>
+                    <li><a href="#">Co-operating partners</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Media coverage</a></li>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="https://www.facebook.com/profile.php?id=61557433298431&mibextid=ZbWKwL">Facebook</a></li>
+            <li><a href="https://www.instagram.com/dei_at_work?igsh=MTMydGIxdGkzbXpz">Instagram</a></li>
+        </ul>
+    </nav>
+
+    <div id="content">
+
+        <h1 id="dei_title">DEI<span id="at">@</span>WORK PROJECT</h1>
+        <hr>
+        <br>
+
+        <div id="box">
+
+            <figure class="snip1567">
+                <div></div>
+                <img src="./images/d.png" alt="D stants for image" />
+                <figcaption>
+                    <h3>Diversity</h3>
+                    <ul>
+                        <li>Diversity exists in the teams.</li>
+                    </ul>
+                </figcaption>
+                <div class="hover"></div><i class="ion-android-add"></i>
+                <!-- <a href="#"></a> -->
+            </figure>
+
+
+
+            <figure class="snip1567"><img src="./images/e.png" alt="E stants for image" />
+                <figcaption>
+                    <h3>Equity</h3>
+                    <p>
+                    <ul>
+                        <li>Equity and Justice.</li>
+                        <li>Addressing inequalities with different levels of support.</li>
+
+                    </ul>
+                    </p>
+                </figcaption>
+                <div class="hover"></div><i class="ion-android-add"></i>
+                <!-- <a href="#"></a> -->
+            </figure>
+
+            <figure class="snip1567"><img src="./images/i.png" alt="I stants for image" />
+                <figcaption>
+                    <h3>Inclusion</h3>
+                    <ul>
+                        <li>Equal treatment of all company stakeholders to promote a sense of belonging and inclusion.
+                        </li>
+                    </ul>
+
+                </figcaption>
+                <div class="hover"></div><i class="ion-android-add"></i>
+                <!-- <a href="#"></a>
+            </figure> -->
+        </div>
+        <br><br>
+
+        <h1>Initiator</h1>
+        <hr>
+        <br><br>
+       
+
+        <article class="cta">
+            <img id="prof_pic" src="./images/ckkwan.jpg">
+            <div class="cta__text-column">
+                <h2 id="prof_name">Prof. Ricky Kwan</h2>
+                <br>
+                <p id="prof_line1">Assistant Professor,</p>
+                <p id="prof_line1">Department of Social and Behavioural Sciences</p>
+                <br>
+                    
+                <a href="https://scholars.cityu.edu.hk/en/persons/chi-kin-kwan(21fc77a8-5087-484b-bf22-0e8d80284ca9).html">More information</a>
+            </div>
+        </article>
+
+        <br><br><br>
+        
+    
+
+
+    </div>
+
+
+
+
+
+
+    <footer>
+        <p>© 2015 <a id="foot_link" href="https://www.cityu.edu.hk/">City University of Hong Kong</a>. Department of
+            Social and Behavioural Sciences. All rights reserved.</p>
+    </footer>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const snipElements = document.querySelectorAll('.snip1567');
+            snipElements.forEach(function (elem) {
+                elem.addEventListener('click', function () {
+                    // Toggle the 'hover' class on click
+                    this.classList.toggle('hover');
+                });
+            });
+        });
+    </script>
+
+</body>
+
+</html>

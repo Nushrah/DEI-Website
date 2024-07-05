@@ -1,0 +1,105 @@
+ol {
+    list-style-type:disc;
+    padding: 0;
+    margin: 0;
+}
+
+li{
+    padding-left: 20px;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  background: #FFFF;
+  color: black;
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+}
+
+p {
+  margin: 0 0 13px 0;
+}
+
+a {
+  color: #fff;
+}
+
+.oneday {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+    border: 3px #1C9EA5 solid;
+  border-radius: 30px;
+}
+
+.container {
+  width: 95%;
+  max-width: 1220px;
+  margin: 0 auto;
+}
+
+.episode {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  position: relative;
+}
+
+.episode__number {
+  font-size: 8vw;
+  font-weight: 600;
+  padding: 10px 0;
+  position: sticky;
+  top: 0;
+  text-align: left;
+  height: calc(10vw + 20px);
+  transition: all 0.2s ease-in;
+  color:#1bd1d7
+}
+
+.story{
+    margin-left: 30px;
+    /* background-color: #95e9ec;
+    padding: 4%; */
+    border-radius: 10px;
+    
+    
+}
+
+.episode__content {
+  border-top: 2px solid #EA7A1D;
+  border-top-width: 5px;
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  grid-gap: 10px;
+  padding: 30px 0;
+  }
+
+.episode__content .title {
+  font-weight: 600;
+  font-size: 200%;
+  color: #EA7A1D;
+  
+}
+
+.episode__content .story {
+  line-height: 30px;
+}
+
+@media (max-width: 600px) {
+  .episode__content {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 576px) {
+  .episode__content .story {
+    font-size: 15px;
+  }
+}
+
