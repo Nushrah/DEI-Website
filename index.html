@@ -7,7 +7,7 @@
     <meta name="description" content="About DEI">
     <meta name="keywords" content="diversity, equity, inclusion, dei, work">
 
-    <title>What is DEI</title>
+    <title>Home</title>
     <link rel="icon" type="image/x-icon" href="./images/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="./css/theme.css">
@@ -108,7 +108,7 @@
         <h1>Initiator</h1>
         <hr>
         <br><br>
-       
+
 
         <article class="cta">
             <img id="prof_pic" src="./images/ckkwan.jpg">
@@ -118,14 +118,16 @@
                 <p id="prof_line1">Assistant Professor,</p>
                 <p id="prof_line1">Department of Social and Behavioural Sciences</p>
                 <br>
-                    
-                <a href="https://scholars.cityu.edu.hk/en/persons/chi-kin-kwan(21fc77a8-5087-484b-bf22-0e8d80284ca9).html">More information</a>
+
+                <a
+                    href="https://scholars.cityu.edu.hk/en/persons/chi-kin-kwan(21fc77a8-5087-484b-bf22-0e8d80284ca9).html">More
+                    information</a>
             </div>
         </article>
 
         <br><br><br>
-        
-    
+
+
 
 
     </div>
@@ -149,7 +151,21 @@
                     this.classList.toggle('hover');
                 });
             });
+
+            function handleResize() {
+                const isSmallScreen = window.matchMedia("(max-width: 800px)").matches;
+                snipElements.forEach(function (elem) {
+                    if (isSmallScreen) {
+                        // Ensure 'hover' class is removed on small screens
+                        elem.classList.remove('hover');
+                    }
+                });
+            }
+
+            window.addEventListener('resize', handleResize);
+            handleResize(); // Initial check
         });
+
     </script>
 
 </body>
