@@ -142,21 +142,22 @@
             Social and Behavioural Sciences. All rights reserved.</p>
     </footer>
 
-    <script>
+     <script>
         document.addEventListener("DOMContentLoaded", function () {
             const snipElements = document.querySelectorAll('.snip1567');
             snipElements.forEach(function (elem) {
                 elem.addEventListener('click', function () {
-                    // Toggle the 'hover' class on click
-                    this.classList.toggle('hover');
+                    const isSmallScreen = window.matchMedia("(max-width: 800px)").matches;
+                    if (isSmallScreen) {
+                        this.classList.toggle('hover');
+                    }
                 });
             });
 
             function handleResize() {
                 const isSmallScreen = window.matchMedia("(max-width: 800px)").matches;
                 snipElements.forEach(function (elem) {
-                    if (isSmallScreen) {
-                        // Ensure 'hover' class is removed on small screens
+                    if (!isSmallScreen) {
                         elem.classList.remove('hover');
                     }
                 });
@@ -166,8 +167,8 @@
             handleResize(); // Initial check
         });
 
-    </script>
 
+    </script>
 </body>
 
 </html>
