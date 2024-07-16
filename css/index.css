@@ -226,18 +226,18 @@ body {
 
 
 @media screen and (max-width: 800px) {
-  .snip1567:hover .hover,
-  .snip1567:hover ul,
-  .snip1567:hover h3,
-  .snip1567:hover i {
+  .snip1567.no-hover:hover .hover,
+  .snip1567.no-hover:hover ul,
+  .snip1567.no-hover:hover h3,
+  .snip1567.no-hover:hover i {
     opacity: 0;
     transform: none;
   }
 
-  .snip1567 .hover,
-  .snip1567 ul,
-  .snip1567 h3,
-  .snip1567 i {
+  .snip1567.no-hover .hover,
+  .snip1567.no-hover ul,
+  .snip1567.no-hover h3,
+  .snip1567.no-hover i {
     transition: none;
   }
 }
