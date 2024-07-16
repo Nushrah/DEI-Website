@@ -143,7 +143,7 @@
     </footer>
 
      <script>
-      document.addEventListener("DOMContentLoaded", function () {
+       document.addEventListener("DOMContentLoaded", function () {
             const snipElements = document.querySelectorAll('.snip1567');
             const mediaQuery = window.matchMedia("(max-width: 800px)");
 
@@ -154,18 +154,21 @@
                 }
             }
 
+            function handleResize() {
+                const isSmallScreen = mediaQuery.matches;
+                snipElements.forEach(function (elem) {
+                    if (isSmallScreen) {
+                        elem.classList.add('no-hover');
+                    } else {
+                        elem.classList.remove('no-hover');
+                        elem.classList.remove('hover');
+                    }
+                });
+            }
+
             snipElements.forEach(function (elem) {
                 elem.addEventListener('click', toggleHoverOnClick);
             });
-
-            function handleResize() {
-                const isSmallScreen = mediaQuery.matches;
-                if (!isSmallScreen) {
-                    snipElements.forEach(function (elem) {
-                        elem.classList.remove('hover');
-                    });
-                }
-            }
 
             mediaQuery.addEventListener('change', handleResize);
             handleResize(); // Initial check
