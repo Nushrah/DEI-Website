@@ -143,33 +143,33 @@
     </footer>
 
      <script>
-         document.addEventListener("DOMContentLoaded", function () {
-    const snipElements = document.querySelectorAll('.snip1567');
-    const mediaQuery = window.matchMedia("(max-width: 800px)");
+      document.addEventListener("DOMContentLoaded", function () {
+            const snipElements = document.querySelectorAll('.snip1567');
+            const mediaQuery = window.matchMedia("(max-width: 800px)");
 
-    function toggleHoverOnClick(event) {
-        const isSmallScreen = mediaQuery.matches;
-        if (isSmallScreen) {
-            event.currentTarget.classList.toggle('hover');
-        }
-    }
+            function toggleHoverOnClick(event) {
+                const isSmallScreen = mediaQuery.matches;
+                if (isSmallScreen) {
+                    event.currentTarget.classList.toggle('hover');
+                }
+            }
 
-    snipElements.forEach(function (elem) {
-        elem.addEventListener('click', toggleHoverOnClick);
-    });
-
-    function handleResize() {
-        const isSmallScreen = mediaQuery.matches;
-        if (!isSmallScreen) {
             snipElements.forEach(function (elem) {
-                elem.classList.remove('hover');
+                elem.addEventListener('click', toggleHoverOnClick);
             });
-        }
-    }
 
-    mediaQuery.addEventListener('change', handleResize);
-    handleResize(); // Initial check
-});
+            function handleResize() {
+                const isSmallScreen = mediaQuery.matches;
+                if (!isSmallScreen) {
+                    snipElements.forEach(function (elem) {
+                        elem.classList.remove('hover');
+                    });
+                }
+            }
+
+            mediaQuery.addEventListener('change', handleResize);
+            handleResize(); // Initial check
+        });
 
 
     </script>
