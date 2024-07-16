@@ -225,13 +225,24 @@ body {
 /* //////////////////////////////////////////////////// */
 
 @media screen and (max-width: 800px) {
-  #box {
-    flex-direction: column; /* Arrange items vertically */
-    height: auto; /* Adjust height for vertical layout */
-    gap: 2px;
+  /* Disable hover effects */
+  .snip1567:hover .hover,
+  .snip1567.hover .hover,
+  .snip1567:hover ul,
+  .snip1567.hover ul,
+  .snip1567:hover h3,
+  .snip1567.hover h3,
+  .snip1567:hover i,
+  .snip1567.hover i {
+    opacity: 0;
+    transform: none;
   }
 
-  .snip1567 {
-    display: block;
+  .snip1567 .hover,
+  .snip1567 ul,
+  .snip1567 h3,
+  .snip1567 i {
+    transition: none;
   }
 }
+
