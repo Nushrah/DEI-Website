@@ -144,32 +144,32 @@
 
      <script>
          document.addEventListener("DOMContentLoaded", function () {
-            const snipElements = document.querySelectorAll('.snip1567');
-            const mediaQuery = window.matchMedia("(max-width: 800px)");
+    const snipElements = document.querySelectorAll('.snip1567');
+    const mediaQuery = window.matchMedia("(max-width: 800px)");
 
-            function toggleHoverOnClick(event) {
-                const isSmallScreen = mediaQuery.matches;
-                if (isSmallScreen) {
-                    event.currentTarget.classList.toggle('hover');
-                }
-            }
+    function toggleHoverOnClick(event) {
+        const isSmallScreen = mediaQuery.matches;
+        if (isSmallScreen) {
+            event.currentTarget.classList.toggle('hover');
+        }
+    }
 
+    snipElements.forEach(function (elem) {
+        elem.addEventListener('click', toggleHoverOnClick);
+    });
+
+    function handleResize() {
+        const isSmallScreen = mediaQuery.matches;
+        if (!isSmallScreen) {
             snipElements.forEach(function (elem) {
-                elem.addEventListener('click', toggleHoverOnClick);
+                elem.classList.remove('hover');
             });
+        }
+    }
 
-            function handleResize() {
-                const isSmallScreen = mediaQuery.matches;
-                if (!isSmallScreen) {
-                    snipElements.forEach(function (elem) {
-                        elem.classList.remove('hover');
-                    });
-                }
-            }
-
-            window.addEventListener('resize', handleResize);
-            handleResize(); // Initial check
-        });
+    mediaQuery.addEventListener('change', handleResize);
+    handleResize(); // Initial check
+});
 
 
     </script>
