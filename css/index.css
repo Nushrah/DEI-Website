@@ -115,23 +115,23 @@
   z-index: 1;
 }
 
-.snip1567:hover .hover,
+/* .snip1567:hover .hover, */
 .snip1567.hover .hover {
   opacity: 1;
 }
 
-.snip1567:hover ul,
+/* .snip1567:hover ul, */
 .snip1567.hover ul {
   opacity: 1;
 }
 
-.snip1567:hover h3,
+/* .snip1567:hover h3, */
 .snip1567.hover h3 {
   -webkit-transform: translateY(0%);
   transform: translateY(0%);
 }
 
-.snip1567:hover i,
+/* .snip1567:hover i, */
 .snip1567.hover i {
   -webkit-transform: translate(-50%, -50%) scale(0.1);
   transform: translate(-50%, -50%) scale(0.1);
