@@ -226,19 +226,10 @@ body {
 
 
 @media screen and (max-width: 800px) {
-  .snip1567.no-hover:hover .hover,
-  .snip1567.no-hover:hover ul,
-  .snip1567.no-hover:hover h3,
-  .snip1567.no-hover:hover i {
-    opacity: 0;
-    transform: none;
-  }
 
-  .snip1567.no-hover .hover,
-  .snip1567.no-hover ul,
-  .snip1567.no-hover h3,
-  .snip1567.no-hover i {
-    transition: none;
+  #prof_line1, #prof_line2 {
+    line-height: 1.2em;
+    margin: 0.5em 0;
   }
 }
 
