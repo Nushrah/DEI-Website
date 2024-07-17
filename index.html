@@ -143,38 +143,14 @@
     </footer>
 
      <script>
-       document.addEventListener("DOMContentLoaded", function () {
-            const snipElements = document.querySelectorAll('.snip1567');
-            const mediaQuery = window.matchMedia("(max-width: 800px)");
-
-            function toggleHoverOnClick(event) {
-                const isSmallScreen = mediaQuery.matches;
-                if (isSmallScreen) {
-                    event.currentTarget.classList.toggle('hover');
-                }
-            }
-
-            function handleResize() {
-                const isSmallScreen = mediaQuery.matches;
-                snipElements.forEach(function (elem) {
-                    if (isSmallScreen) {
-                        elem.classList.add('no-hover');
-                    } else {
-                        elem.classList.remove('no-hover');
-                        elem.classList.remove('hover');
-                    }
+        document.addEventListener("DOMContentLoaded", function() {
+            const figures = document.querySelectorAll('.snip1567');
+            figures.forEach(figure => {
+                figure.addEventListener('click', function() {
+                    this.classList.toggle('hover');
                 });
-            }
-
-            snipElements.forEach(function (elem) {
-                elem.addEventListener('click', toggleHoverOnClick);
             });
-
-            mediaQuery.addEventListener('change', handleResize);
-            handleResize(); // Initial check
         });
-
-
     </script>
 </body>
 
