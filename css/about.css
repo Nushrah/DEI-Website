@@ -65,7 +65,7 @@ a {
 }
 
 .episode__content {
-  border-top: 2px solid #EA7A1D;
+  border-top: 2px solid #ee7d03;
   border-top-width: 5px;
   display: grid;
   grid-template-columns: 1fr 4fr;
@@ -76,7 +76,7 @@ a {
 .episode__content .title {
   font-weight: 600;
   font-size: 200%;
-  color: #EA7A1D;
+  color: #ee7d03;
   
 }
 
@@ -95,4 +95,3 @@ a {
     font-size: 15px;
   }
 }
-

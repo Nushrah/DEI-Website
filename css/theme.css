@@ -8,8 +8,6 @@ body, html {
     height: 100%;
     margin: 0;
 
-    /* display: flex;
-    flex-direction: column; */
 
 }
 
@@ -18,73 +16,57 @@ body{
 }
 
 h1{
-    color:#1BD1D7;
+    color:#00aab4;
 	font-size: 275%;
 }
 
 h2{
-	color:#EA7A1D;
+	color:#ee7d03;
 	font-size: 200%;
 }
 
 header{
-    /* width: 100%;
-    height: 400px;
-    background-color: #ffffff;
-    margin:auto;
-	position:relative; */
 	width: 100%;
-	height: 50%;
     background-color: #ffffff;
     display: flex;
     flex-direction: column;
     align-items: center;
     position: relative;
+	padding: 20px 0;
 }
 
 #banner{
-	height: 70%;
-	position:absolute;
-    
-    top:50px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-	z-index: 2;
+	max-height: 175px;
+    width: auto;
 }
 
 #cityu_banner{
-	height: 20%;
-	position:absolute;
-    left:30px;
-    top:30px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-	z-index: 2;
+	max-height: 50px;
+    width: auto;
+    position: absolute;
+    left: 30px;
+    top: 30px;
 }
 
 #lang_button{
-    /* height:10%;
-    width: 5%; */
+    height: auto;
+    width: auto; 
 
-    height:45px;
-    width: 45px;
-
-    background-color:#EA7A1D;
+    padding: 5px 10px;
+    background-color: #ee7d03;
     border-radius: 5px;
-    position:absolute;
-    right:30px;
-    top:30px;
+    position: absolute;
+    right: 30px;
+    top: 30px;
     display: flex;
     align-items: center;
     justify-content: center;
-	z-index: 2;
+
 	
 }
 
 #lang_button_p{
-    line-height: 35px;
+    line-height: 100%;
     font-size: 100%;
    
     margin: auto;
@@ -101,7 +83,7 @@ header{
 }
 
 #menu {
-	background: #1C9EA5;
+	background: #00aab4;
 	height: 45px;
 	padding-left: 18px;
 	border-radius: 10px;
@@ -186,20 +168,7 @@ header{
 	background: #F2F2F2;
 	color: #1BD1D7;
 }
-@media screen and (max-width: 800px){
-	#menu {position:relative}
-	#menu ul {background:#3E3E3C;position:absolute;top:100%;right:0;left:0;z-index:3;height:auto;display:none;text-align:left;}
-	#menu ul.sub-menus {width:100%;position:static;}
-	#menu ul.sub-menus a {padding-left:30px;}
-	#menu li {display:block;float:none;width:auto;}
-	#menu input, #menu label {position:absolute;top:0;left:0;display:block}
-	#menu input {z-index:4}
-	#menu input:checked + label {color:#FFFFFF}
-	#menu input:checked + label:before {content:"\00d7"}
-	#menu input:checked ~ ul {display:block}
-	footer p {text-align: center;}
-	#lang_button {right: 10px;}
-}
+
 
 #content{
     width:90%;
@@ -207,26 +176,21 @@ header{
     margin-right:auto;
     margin-top: 20px;
 
-    /* flex: 1; */
 }
 
 hr{
     height:2px;
-    background-color: #1BD1D7;
+    background-color: #00aab4;
     border: none;
 }
 
 footer {
     width: 100%;
-    background-color: #EA7A1D;
+    background-color: #ee7d03;
     display: flex;
     align-items: center;
     justify-content: center;
     height: 50px;
-
-    /* position: fixed;
-    left: 0;
-    bottom: 0; */
 }
 
 
@@ -239,4 +203,42 @@ footer p {
 
 #foot_link{
     color:#00f2ff;
+}
+
+@media screen and (max-width: 800px){
+	#menu {position:relative}
+	#menu ul {background:#3E3E3C;position:absolute;top:100%;right:0;left:0;z-index:3;height:auto;display:none;text-align:left;}
+	#menu ul.sub-menus {width:100%;position:static;}
+	#menu ul.sub-menus a {padding-left:30px;}
+	#menu li {display:block;float:none;width:auto;}
+	#menu input, #menu label {position:absolute;top:0;left:0;display:block}
+	#menu input {z-index:4}
+	#menu input:checked + label {color:#FFFFFF}
+	#menu input:checked + label:before {content:"\00d7"}
+	#menu input:checked ~ ul {display:block}
+	footer p {text-align: center;}
+
+	#cityu_banner{
+		max-height: 20px;
+		left: 15px;
+		top: 8px;
+	}
+
+	#banner{
+		max-height: 70px;
+	}
+
+	#lang_button{
+		right: 15px;
+		top: 8px;
+		max-height: 12px;
+		max-width: 12px;
+		font-size: 70%;
+		
+	}
+
+	h1{
+		font-size: 150%;
+	}
+
 }

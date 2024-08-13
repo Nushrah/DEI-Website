@@ -10,7 +10,7 @@
 #dei_title{
   text-align:center;
   font-weight: 800;
-  font-size: 300%;
+  font-size: 275%;
 }
 
 #at{
@@ -231,5 +231,13 @@ body {
     line-height: 1.2em;
     margin: 0.5em 0;
   }
+
+  #dei_title{
+    font-weight: 750;
+    font-size: 150%;
+  }
+
+
+
 }
 
