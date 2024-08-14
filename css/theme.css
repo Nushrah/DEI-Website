@@ -219,21 +219,20 @@ footer p {
 	footer p {text-align: center;}
 
 	#cityu_banner{
-		max-height: 20px;
+		max-height: 30px;
 		left: 15px;
 		top: 8px;
 	}
 
 	#banner{
-		max-height: 70px;
+		max-height: 120px;
 	}
 
 	#lang_button{
 		right: 15px;
 		top: 8px;
-		max-height: 12px;
-		max-width: 12px;
-		font-size: 70%;
+		max-height: 25px;
+		font-size: 80%;
 		
 	}
 
