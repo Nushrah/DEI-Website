@@ -1,0 +1,139 @@
+
+.card-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10px; /* Set the gap between cards to always be 10px */
+}
+
+.card {
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    padding: 20px;
+    flex: 1 1 calc(33.333% - 20px); /* Adjust the width to fit 3 cards with a 10px gap */
+    min-width: 250px;
+    border: 1px solid #e0e0e0;
+}
+
+.card h2 {
+    color:#ee7d03;
+    margin-bottom: 10px;
+}
+
+.card p, .card ul {
+    color: #555;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.card ul {
+    
+    padding-left: 25px;
+}
+
+.card ul li {
+    margin-bottom: 5px;
+}
+
+/* Responsive design for tablets and smaller screens */
+@media (max-width: 1024px) {
+    .card {
+        flex: 1 1 calc(50% - 20px); /* Cards will take 50% width on medium-sized screens, with 10px gap */
+    }
+}
+
+/* Responsive design for phones */
+@media (max-width: 768px) {
+    .card {
+        flex: 1 1 100%; /* Cards take full width on small screens */
+    }
+}
+
+/* /////////////////////////////////////////////////////////////////////////////////////////// */
+
+/* Position the image container (needed to position the left and right arrows) */
+.container {
+    position: relative;
+    width: 80%;
+    margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+    display: none;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+    cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+    color: #000000;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+    background-color: rgba(240, 255, 255, 0.44);
+}
+
+/* Container for image text */
+.caption-container {
+    text-align: center;
+    background-color: #222;
+    padding: 2px 16px;
+    color: white;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Six columns side by side */
+.column {
+    float: left;
+    width: 16.66%;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+    opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+    opacity: 1;
+}

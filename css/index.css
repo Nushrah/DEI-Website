@@ -6,6 +6,10 @@
   margin: auto;
 }
 
+footer{
+  width:100%;
+}
+
 
 #dei_title{
   text-align:center;
@@ -140,20 +144,20 @@
 
 /* //////////////////////////////////////////////////// */
 
-/* * {
-	box-sizing: border-box;
+iframe {
+  width: 100%;
+  max-width: 60%;
+  height: auto;
+  aspect-ratio: 16 / 9;
+  display: block;
+  margin: 0 auto;
 }
 
-body {
-	font-family: "Open Sans", sans-serif;
-	min-height: 100vh;
-	display: flex;
-	flex-direction: column;
-	gap: 2rem;
-	justify-content: center;
-	align-items: center;
-	background: hsl(187 40% 98%);
-} */
+
+
+/* //////////////////////////////////////////////////// */
+
+
 
 #prof_pic {
 	display: block;
@@ -221,6 +225,14 @@ body {
 	/* border: 0.1rem solid; */
   background-color: #18898f
 }
+
+#kickoff_lego_logo{
+  width:50%;
+  margin:auto;
+}
+
+/* //////////////////////////////////////////////////// */
+
 
 /* //////////////////////////////////////////////////// */
 
